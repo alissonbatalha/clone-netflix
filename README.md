@@ -1,6 +1,6 @@
 # clone-netflix
 
-## Em desenvolvimento...
+### Em desenvolvimento...
 
 Um clone responsivo do site da netflix com HTML e CSS.
 
