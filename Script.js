@@ -1,12 +1,19 @@
-/*const pergunta = document.querySelector(".pergunta");
-const resposta = document.querySelector(".resposta");
-	
+// perguntas frequentes 
+const perguntas = document.querySelectorAll(".pergunta");
 
-function mostraResposta (elemento) {
-		elemento.classList.toggle('resposta--ativa');
+for (let i = 0; i < perguntas.length; i++) {
+	perguntas[i].addEventListener("click", () => {
+		
+		perguntas[i].classList.toggle('pergunta--ativa');
+		
+		const resposta = perguntas[i].nextElementSibling;
+		resposta.classList.toggle('resposta--ativa');
+		
+		if (resposta.style.maxHeight) {
+			resposta.style.maxHeight = null;
+		} else {
+			resposta.style.maxHeight = resposta.scrollHeight + 'px';
+		}
+		
+	});
 }
-
-
-pergunta.addEventListener("click", () =>  {
-	console.log('fui clicado');
-});*/

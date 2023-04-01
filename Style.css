@@ -1,412 +1,572 @@
 * {
-     margin:0;
-     padding:0;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Roboto', sans-serif;
 }
 
-input {outline: none;}
+input {
+  outline: none;
+}
 
 ::-webkit-scrollbar {
-	width: 0;
-	height: 0;
+  width: 0;
+  height: 0;
 }
 
-
 body {
-    background-color:black;
+  background-color: black;
 }
 
 /* header*/
 header {
-    background-image:url('./img/Background.jpg');
-    background-size: cover;
-    background-repeat: no-repeat;
-    background-color:black;
-    background-position: center;
-    width:100%;
-    min-height: 480px;
-    padding: 25px 0;
-    border-bottom: 8px solid #5c5c5cff;
-    
-    box-shadow: 181px 191px 390px 80px rgba(0,0,0,0.62) inset;
-		-webkit-box-shadow: 181px 191px 390px 80px rgba(0,0,0,0.62) inset;
-		-moz-box-shadow: 181px 191px 390px 80px rgba(0,0,0,0.62) inset;
+  background-image: url("./img/Background.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-color: black;
+  background-position: center;
+  width: 100%;
+  min-height: 480px;
+  padding: 25px 0;
+  border-bottom: 8px solid #5c5c5cff;
+  
+  box-shadow: 181px 191px 390px 80px rgba(0, 0, 0, 0.62) inset;
+  -webkit-box-shadow: 181px 191px 390px 80px rgba(0, 0, 0, 0.62) inset;
+  -moz-box-shadow: 181px 191px 390px 80px rgba(0, 0, 0, 0.62) inset;
+  
 }
 
 .logo {
-    display: inline-block;
-    margin: 0 0 5px 10px;
-    width: 28%;
-    max-width: 140px;
+  display: inline-block;
+  margin: 0 0 5px 10px;
+  width: 28%;
+  max-width: 140px;
 }
 
-nav  {
-    font-size:20px;
-    float: right;
+nav {
+  font-size: 20px;
+  float: right;
 }
 
 .idioma {
-    background-color: black;
-    color:white;
-    font-size: 0.8em;
-    padding:3px 6px;
-    margin:0 5px 0;
+  background-color: black;
+  color: white;
+  font-size: 0.8em;
+  padding: 3px 6px;
+  margin: 0 5px 0;
 }
 
 .entrar {
-    background-color:red;
-    color:white;
-    padding:2px 6px;
-    border-radius:5px;
-    text-decoration:none;
-    margin: 0 5px 0;
+  background-color: red;
+  color: white;
+  padding: 2px 6px;
+  border-radius: 5px;
+  text-decoration: none;
+  margin: 0 5px 0;
 }
 
 .sessao {
-	border-bottom: 8px solid #5c5c5cff;
-	
-	padding: 40px 0;
+  border-bottom: 8px solid #5c5c5cff;
+
+  padding: 40px 0;
 }
 
 .parte1 {
-    text-align:center;
-    color: white;
-    height: 50%;
-    margin-top: 63px;
+  text-align: center;
+  color: white;
+  height: 50%;
+  margin-top: 63px;
 }
 
 .parte1 p {
-    font-size: 20px;
-    margin: 20px 10px;
+  font-size: 20px;
+  text-align: center;
+
+  margin: 20px 10px;
 }
 
 .email {
-    position:relative;
-    margin-top:15px;
-    padding:15px 5px;
-    width:80%;
-    border-radius: 5px;
+  position: relative;
+  margin-top: 15px;
+  padding: 15px 5px;
+  width: 80%;
+  border-radius: 5px;
 }
 
 .vamosla {
-    background-color:red;
-    color:white;
-    padding:10px 20px;
-    border-radius:5px;
-    text-decoration:none;
-    margin:20px 0;
-    border: none;
-    font-weight: bold;
-    font-size: 1em;
+  background-color: red;
+  color: white;
+  padding: 10px 20px;
+  border-radius: 5px;
+  text-decoration: none;
+  margin: 20px 0;
+  border: none;
+  font-weight: bold;
+  font-size: 1em;
 }
 
 /* main */
 .parte2 {
-    text-align:center;
-    color: white;
-    height: 80%;
+  text-align: center;
+  color: white;
+  height: 80%;
 }
 
 .parte2 p {
-    font-size: 20px;
-    margin: 0 10px;
+  font-size: 20px;
+  margin: 0 10px;
 }
 
-.tv {
-    width:90%;
-    max-width: 600px;
+.tv-container {
+	position: relative;
+}
+
+.tv-container img {
+	position: relative;
+	
+  width: 90%;
+  max-width: 600px;
+  
+  z-index: 2;
+}
+
+.tv-container video {
+	position: absolute;
+	left: 70px;
+	top: 58px;
+	
+	width: 65%;
+	max-width: 590px;
+	
+	z-index: 1;
 }
 
 .parte3 {
-    text-align:center;
-    color: white;
-    height: 80%;
+	position: relative;
+  text-align: center;
+  color: white;
+  height: 80%;
 }
 
 .parte3 p {
-    font-size: 20px;
-    margin: 0 10px;
+  font-size: 20px;
+  margin: 0 10px;
 }
 
 .eleven {
-    width:80%;
-    max-width: 600px;
+  width: 80%;
+  max-width: 600px;
+}
+
+.card-animation {
+	position: relative;
+	top: -75px;
+	
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	
+	background-color: #000;
+	
+	width: 60%;
+	height: 60px;
+	
+	border: 1px solid #414141;
+	border-radius: 5px;
+	
+	margin: auto;
+}
+
+.card-animation .boxshot {
+	position: absolute;
+	
+	left: 10px;
+	
+	width: 100%;
+	max-width: 35px;
+}
+
+.card-animation__content {
+	display: flex;
+	flex-direction: column;
+	align-items: space-between;
+	
+	text-align: center;
+	
+	margin-left: -30px;
+}
+
+.card-animation__content .card-animation__title {
+	font-size: .9rem;
+	font-weight: bold;
+}
+
+.card-animation__content .card-animation__subtitle {
+	color: blue;
+	
+	font-size: .8rem;
+}
+
+.gif {
+	position: absolute;
+	right: 5px;
+	
+	width: 100%;
+	max-width: 35px;
 }
 
 .parte4 {
-    text-align:center;
-    color: white;
-    height: 80%;
+  text-align: center;
+  color: white;
+  height: 80%;
 }
 
 .parte4 p {
-    font-size: 20px;
-    margin: 0 10px;
+  font-size: 20px;
+  margin: 0 10px;
+}
+
+.tv-container .stranger {
+	width: 56%;
+	
+	left: 82px;
 }
 
 .dispositivos {
-    width:90%;
-    max-width: 600px;
+  width: 90%;
+  max-width: 600px;
 }
 
 .parte5 {
-    text-align:center;
-    color: white;
-    height: 80%;
+  text-align: center;
+  color: white;
+  height: 80%;
 }
 
 .parte5 p {
-    font-size: 20px;
-    margin: 0 10px;
+  font-size: 20px;
+  margin: 0 10px;
 }
 
 .infantil {
-    width:90%;
-    max-width:600px ;
+  width: 90%;
+  max-width: 600px;
 }
 
 .perguntas-frequentes {
-    text-align:center;
-    color: white;
-    height: 80%;
-    padding-top: 40px;
+  text-align: center;
+  color: white;
+  height: 80%;
+  padding-top: 40px;
+  overflow: hidden;
 }
 
 .pergunta {
-    background-color: #161616;
-    display:flex;
-    justify-content: space-between;
-    color: white;
-    padding: 10px 0;
-    width: 100%;
-    font-size: 1.2em;
-    text-align: left;
-    border:none;
-    margin: 5px 0 5px 0;
+  background-color: #161616;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  color: white;
+  padding: 10px 8px;
+  width: 100%;
+  font-size: 1.2em;
+  text-align: left;
+  border: none;
+  margin: 5px 0 5px 0;
+  overflow: hidden;
+  transition: all 0.7s ease;
 }
 
 .icon {
-	margin-right: .5em;
-	
-	font-size: 2.2em;
-	font-weight: 200;
-	
-	color: white;
+  margin-right: 0.5em;
+
+  font-size: 2em;
+  font-weight: 200;
+
+  color: white;
+  
+  transition: all .2s linear;
 }
 
 pergunta h1 {
-    margin-left: 10px;
+  margin-left: 10px;
 }
 
 .resposta {
-    background-color: #161616;
-    color: white;
-    padding: 10px 0;
-    width: 100%;
-    font-size: 1.2em;
-    text-align: center;
-    margin: 5px 0;
-    
-    max-height: 1200px;
-    overflow: hidden;
-    transition: transformY max-heigth 0.25s cubic-bezier(0,5, 0, 0.1, 1);
+  background-color: #161616;
+  color: white;
+  
+  padding: 0;
+  
+  width: 100%;
+  max-height: 0;
+  
+  font-size: 1.2em;
+  text-align: center;
+ 
+  margin: 5px 0;
+
+  overflow: hidden;
+  
+  transition: all .5s ease-out;
+}
+
+.resposta--ativa {
+	max-height: 600px;
+	
 }
 
 .resposta p {
-    width: 90%;
-    text-align:left;
+  width: 90%;
+  text-align: left;
+
+  line-height: 1.5em;
+  
+  padding: 10px ;
 }
 
+.pergunta--ativa .icon {
+	transform: rotate(45deg);
+}
 
 .parte6 {
-    text-align:center;
-    align-items: center;
-    color: white;
-    height: 50%;
+  text-align: center;
+  align-items: center;
+  color: white;
+  height: 50%;
 }
 
 .parte6 p {
-    font-size: 18px;
-    text-align: center;
+  font-size: 18px;
+  text-align: center;
 }
-    
+
+
+
 /* footer */
 footer > h3 {
-    color: darkgrey;
-    text-align:center;
-    margin: 20px 0 20px 0;
+  color: darkgrey;
+  text-align: center;
+  margin: 20px 0 20px 0;
 }
 
 footer > ul {
-    list-style-position: inside;
-    columns: 2;
+  list-style-position: inside;
+  columns: 2;
 }
 
 footer > ul > li {
-    text-decoration: none;
-    margin-bottom: 20px;
+  text-decoration: none;
+  font-size: 0.8em;
+
+  margin-bottom: 20px;
 }
 
-footer  a {
-    text-decoration: none;
-    color:darkgrey;
-    margin: 10px 0 10px 0;
-   /* margin-bottom: 20px;*/
-} 
+footer a {
+  text-decoration: none;
+  color: darkgrey;
+  margin: 10px 0 10px 0;
+  /* margin-bottom: 20px;*/
+}
 
 .idioma2 {
-    background-color: black;
-    color:grey;
-    font-size: 1.1em;
-    padding:15px 15px;
-    margin:20px 0 20px 20px;
+  background-color: black;
+  color: grey;
+  font-size: 1.1em;
+  padding: 12px 12px;
+  margin: 20px 0 20px 20px;
 }
 
 .fim {
-    font-size: 1em;
-    color:darkgrey;
-    margin: 15px 0 20px 25px;
+  font-size: 1em;
+  color: darkgrey;
+  margin: 15px 0 20px 25px;
 }
 
-
 @media screen and (min-width: 800px) {
-	
-	.header {
-		min-height: 800px;
-	}
-	
-	.logo {
-		margin-left: 50px;
-		width: 35%;
-	}
-	
-	.idioma {
-		margin-right: 25px;
-		padding:6px 0;
-	}
-	
-	nav {
-		margin-right: 50px;
-	}
+  .header {
+    min-height: 800px;
+  }
 
-	.entrar {
-        padding: 5px 10px;
-	}
-	
-	.parte1 h1 {
-        font-size: 2.5em;
-	}
+  .logo {
+    margin-left: 50px;
+    width: 35%;
+  }
 
-    .p1 {
-        margin: 20px 0;
+  .idioma {
+    margin-right: 25px;
+    padding: 6px 0;
+  }
 
-        font-size: 1.7em;
-    }
+  nav {
+    margin-right: 50px;
+  }
 
-    .p2 {
-        margin: 15px 0;
+  .entrar {
+    padding: 5px 10px;
+  }
 
-        font-size: 1.5em;
-    }
-	
-    .header-container {
-        display: flex;
-        align-items: center;
-    }
+  .parte1 h1 {
+    font-size: 2.5em;
+  }
 
-	.email {
-		width: 45vw;
-		padding: 20px 10px;
-		border-top-right-radius: 0;
-		border-bottom-right-radius: 0;
-	}
-	
-	.vamosla {
-		border-top-left-radius: 0;
-		border-bottom-left-radius: 0;
-		padding: 18px;
-		margin: 0;
-	}
-	
-	.container {
-		display: flex;
-		flex-direction: column;
-		justify-content: space-evenly;
-	}
-	
-	.parte2,
-    .parte4 {
-		display: flex;
-        align-items: center;
-        justify-content: space-evenly;
-	}
-	
-	.parte2 h1,
-    .parte3 h1,
-    .parte4 h1,
-    .parte5 h1 {
-		width: 70%;
+  .p1 {
+    margin: 20px 0;
 
-        margin: 1em auto;
+    font-size: 1.7em;
+  }
 
-        font-size: 50px;
-	}
+  .p2 {
+    margin: 15px 0;
 
-    .parte2 p,
-    .parte3 p,
-    .parte4 p,
-    .parte5 p,
-    .parte6 p{
-        width: 70%;
+    font-size: 1.5em;
+  }
 
-        margin: 1em auto;
+  .header-container {
+    display: flex;
+    align-items: center;
+  }
 
-        font-size: 30px;
-    }
-	
-    .parte3,
-    .parte5 {
-        display: flex;
-        align-items: center;
-        justify-content: space-evenly;
-        flex-direction: row-reverse;
-    }
+  .email {
+    width: 45vw;
+    padding: 20px 10px;
+    border-top-right-radius: 0;
+    border-bottom-right-radius: 0;
+  }
 
-    .perguntas-frequentes {
-        margin-top: 1em;
-    }
+  .vamosla {
+    border-top-left-radius: 0;
+    border-bottom-left-radius: 0;
+    padding: 18px;
+    margin: 0;
+  }
 
-    .perguntas-frequentes h1 {
-        font-size: 48px;
-        margin: .5em 0 ;
-    }
+  .container {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+  }
 
-    .perguntas-container {
-        width: 58vw;
-        margin: 0 auto;
-    }
+  .parte2,
+  .parte4 {
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+  }
+  
+  .tv-container img{
+  	min-width: 500px;
+  }
+  
+  .tv-container video {
+  	left: 67px;
+  	top: 67px;
+  	
+  	min-width: 370px;
+  }
+  
+  .tv-container .stranger {
+		min-width: 330px;
+  }
 
-    .pergunta, .resposta {
-        padding: 25px;
+  .parte2 h1,
+  .parte3 h1,
+  .parte4 h1,
+  .parte5 h1 {
+    width: 70%;
 
-        font-size: 1.5em;
-    }
-    
-    .parte6 {
-    	margin-top: 2em;
-    }
-    
-    footer h3,
-    .idioma2,
-    .fim{
-    	text-align: left;
-    	margin-left: 72px;
-    }
-    
-    footer ul {
-    	align-self: center;
-    	columns: 4;
-    	
-    	margin-left: 55px;
-    }
+    margin: .6em auto;
 
+    font-size: 50px;
+  }
+  
+  .eleven {
+  	min-width: 500px;
+  }
+  
+  .card-animation {
+  	height: 80px;
+  
+  }
+ 
+  .card-animation .boxshot {
+  	max-width: 50px;
+  }
+  
+  .card-animation__content {
+  	width: 100%;
+  	
+  	margin-left: -20px;
+  }
+  
+  .card-animation__content .card-animation__title {
+  	font-size: 1.2rem;
+  }
+  
+  .card-animation__content .card-animation__subtitle {
+  	font-size: 1rem;
+  }
+
+  .parte2 p,
+  .parte3 p,
+  .parte4 p,
+  .parte5 p,
+  .parte6 p {
+    width: 70%;
+
+    margin: .5em auto;
+
+    font-size: 30px;
+  }
+
+  .parte3,
+  .parte5 {
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    flex-direction: row-reverse;
+  }
+
+  .perguntas-frequentes {
+    margin-top: 1em;
+  }
+
+  .perguntas-frequentes h1 {
+    font-size: 48px;
+    margin: 0.5em 0;
+  }
+
+  .perguntas-container {
+    width: 88vw;
+    margin: 0 auto;
+  }
+
+  .pergunta,
+  .resposta {
+    padding: 25px;
+
+    font-size: 1.5em;
+  }
+  
+  .resposta {
+  	padding: 0;
+}
+
+  .parte6 {
+    margin-top: 2em;
+  }
+
+  footer h3,
+  .idioma2,
+  .fim {
+    text-align: left;
+    margin-left: 72px;
+  }
+
+  footer ul {
+    align-self: center;
+    columns: 4;
+
+    margin-left: 55px;
+  }
 }
